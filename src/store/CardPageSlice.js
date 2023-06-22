@@ -51,7 +51,7 @@ export const productCardSlice = createSlice({
       if (state.cartItem[index].count > 1) {
         state.cartItem[index].count--;
       }
-      },
+    },
   },
 });
 

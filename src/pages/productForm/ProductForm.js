@@ -25,7 +25,6 @@ const ProductForm = () => {
   };
 
   const onHandleSubmit = () => {
-   
     dispatch(addUser(AddProdcut));
     setProductName("");
     setProductPrice("");
@@ -50,8 +49,7 @@ const ProductForm = () => {
         value={productPrice}
         placeholder="Product price"
         onChange={(e) => {
-          setProductPrice(e.target.value) ;
-    
+          setProductPrice(e.target.value);
         }}
       />
       <input
@@ -63,6 +61,7 @@ const ProductForm = () => {
       <button type="submit" onClick={onHandleSubmit}>
         Submit
       </button>
+      {/* <img src={URL.createObjectURL(file)} /> */}
       <ToastContainer />
     </div>
   );
